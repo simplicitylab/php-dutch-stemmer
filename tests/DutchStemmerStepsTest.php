@@ -6,6 +6,8 @@
  * @author Glenn De Backer < glenn@simplicity.be>
  */
 
+namespace Simplicitylab\Tests;
+
 use Simplicitylab\Stemmer\DutchStemmer;
 
 class DutchStemmerStepsTest extends PHPUnit_Framework_TestCase

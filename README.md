@@ -12,7 +12,7 @@ It can be used in search engines, text mining , classifiers, etc. For example yo
 
 ## How to use the stemmer
     
-    use Simplicity\Dutch\Stemmer;
+    use Simplicitylab\Stemmer\DutchStemmer;
     
     $stemmer = new Stemmer();
     
