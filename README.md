@@ -8,14 +8,14 @@ It can be used in search engines, text mining , classifiers, etc. For example yo
 
 ## How to use the stemmer
     
-use Simplicity\Dutch\Stemmer;
-
-$stemmer = new Stemmer();
-
-echo $stemmer->stemWord("lichamelijk") ."\n";       // licham
-echo $stemmer->stemWord("lichamelijke" )."\n";      // licham
-echo $stemmer->stemWord("lichamelijkheden") ."\n";  // licham
-echo $stemmer->stemWord("lichamen") ."\n";          // licham
+    use Simplicity\Dutch\Stemmer;
+    
+    $stemmer = new Stemmer();
+    
+    echo $stemmer->stemWord("lichamelijk") ."\n";       // licham
+    echo $stemmer->stemWord("lichamelijke" )."\n";      // licham
+    echo $stemmer->stemWord("lichamelijkheden") ."\n";  // licham
+    echo $stemmer->stemWord("lichamen") ."\n";          // licham
 
   
 ## Some sample output
