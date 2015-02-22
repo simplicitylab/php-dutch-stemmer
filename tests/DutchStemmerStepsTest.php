@@ -125,8 +125,21 @@ class DutchStemmerStepsTest extends PHPUnit_Framework_TestCase
         // get private method
         $replace = self::getMethod('replace');
 
-        $this->assertEquals($replace->invokeArgs($this->stemmer, array('zekerheden', '/heden$/', 'heid', 0)), "zekerheid");
-        $this->assertEquals($replace->invokeArgs($this->stemmer, array('hedenheden', '/heden$/', 'heid', 4)), "hedenheid");
+        $this->assertEquals(
+            $replace->invokeArgs(
+                $this->stemmer,
+                array('zekerheden', '/heden$/', 'heid', 0)
+            ),
+            "zekerheid"
+        );
+
+        $this->assertEquals(
+            $replace->invokeArgs(
+                $this->stemmer,
+                array('hedenheden', '/heden$/', 'heid', 4)
+            ),
+            "hedenheid"
+        );
     }
 
     public function testIsVowel()

@@ -114,7 +114,6 @@ class DutchStemmer
                  **/
                 if (preg_match("/(?<![aeiouyè]|gem)(ene?)$/", $term, $matches, 0, $this->R1)) {
                     $term = $this->undouble($this->replace($term, '/(?<![aeiouyè]|gem)(ene?)$/', '', $this->R1));
-                    //$term = $this->undouble(preg_replace('/ene?/', '', $term, -1));
                     return $term;
                 }
 
