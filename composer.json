@@ -1,7 +1,7 @@
 {
   "name": "simplicitylab/php-dutch-stemmer",
   "description": "PHP Dutch stemmer",
-  "license": "LGPL",
+  "license": "LGPL-2.1",
   "keywords": ["dutch stemmer", "dutch", "stemmer"],
   "authors": [
     {
