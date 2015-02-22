@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/simplicitylab/php-dutch-stemmer.svg?branch=master)](https://travis-ci.org/simplicitylab/php-dutch-stemmer)
 
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/73abe06f-faaa-41ea-a0c4-faa1665a3308/big.png)](https://insight.sensiolabs.com/projects/73abe06f-faaa-41ea-a0c4-faa1665a3308)
+
 ## About
 
 PHP Dutch Stemmer is a PHP class that stems Dutch words. It based on the algorithm that is described on the page http://snowball.tartarus.org/algorithms/dutch/stemmer.html . It is being distributed under a LGPL license so that it can be used in a commercial setting. 
