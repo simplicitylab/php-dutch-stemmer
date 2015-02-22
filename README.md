@@ -6,7 +6,7 @@
 
 ## About
 
-PHP Dutch Stemmer is a PHP class that stems Dutch words. It based on the algorithm that is described on the page http://snowball.tartarus.org/algorithms/dutch/stemmer.html . It is being distributed under a LGPL license so that it can be used in a commercial setting. 
+PHP Dutch Stemmer is a PHP class that stems Dutch words. It based on the algorithm that is described on the page http://snowball.tartarus.org/algorithms/dutch/stemmer.html. It is being distributed under a LGPL license so that it can be used in a commercial setting. 
 
 In linguistic morphology, stemming is the process for reducing inflected (or sometimes derived) words to their stem, base or root form generally a written word form. http://en.wikipedia.org/wiki/Stemming
 
