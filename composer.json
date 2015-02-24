@@ -15,7 +15,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Simplicitylab\\Stemmer\\": "src"
+      "Simplicitylab\\Stemmer\\": "src/DutchStemmer"
     }
   }
 }
