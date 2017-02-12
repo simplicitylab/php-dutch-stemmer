@@ -457,8 +457,8 @@ class DutchStemmer
         if ($offset > 0) {
 
             // split up string in 2 parts
-            $part1 = substr($word, 0, $offset);
-            $part2 = substr($word, $offset, strlen($word));
+            $part1 = mb_substr($word, 0, $offset);
+            $part2 = mb_substr($word, $offset, strlen($word));
 
             // do replace in part2 of the word
             $part2 = preg_replace($regex, $replace, $part2);
