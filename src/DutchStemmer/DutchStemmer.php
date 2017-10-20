@@ -440,9 +440,8 @@ class DutchStemmer
                 return $i + 1;
             }
         }
-        // As found in https://alvinalexander.com/java/jwarehouse/lucene/contrib/analyzers/common/src/java/org/apache/lucene/analysis/nl/DutchStemmer.java.shtml
-        // getRIndex returns always $i + 1 because we otherwise may send -1 and that is not what we want to happen.
-        return $i + 1;
+        
+        return $i -1;
     }
 
     /**
