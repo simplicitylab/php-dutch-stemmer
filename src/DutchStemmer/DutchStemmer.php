@@ -332,9 +332,12 @@ class DutchStemmer
         // loop through letters
         for ($i = 1; $i < $num_letters; $i++) {
             if ($letters[$i] == 'i') {
-                // check if i is between two vowels
-                if ($this->isVowel($letters[$i - 1]) && $this->isVowel($letters[$i + 1])) {
-                    $letters[$i] = 'I';
+                // Check if there is an other letter after the one we check
+                if(isset($letters[$i+1])) {
+                    // check if i is between two vowels
+                    if ($this->isVowel($letters[$i - 1]) && ($this->isVowel($letters[$i + 1]))) {
+                        $letters[$i] = 'I';
+                    }
                 }
             } elseif ($letters[$i] == 'y') {
                 if ($this->isVowel($letters[$i - 1])) {
@@ -355,8 +358,6 @@ class DutchStemmer
 
         return $term;
     }
-
-
 
     /**
      * Checks if a strings ends with string
@@ -439,10 +440,10 @@ class DutchStemmer
                 return $i + 1;
             }
         }
-
-        return -1;
+        // As found in https://alvinalexander.com/java/jwarehouse/lucene/contrib/analyzers/common/src/java/org/apache/lucene/analysis/nl/DutchStemmer.java.shtml
+        // getRIndex returns always $i + 1 because we otherwise may send -1 and that is not what we want to happen.
+        return $i + 1;
     }
-
 
     /**
      * Replaces with a certain part of a string
